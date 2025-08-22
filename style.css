@@ -1,0 +1,22 @@
+ * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: blueviolet;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        color: white;
+        text-align: center;
+        border: 9px, solid, black;
+        padding: 20px;
+      }
+      .boximagens {
+       color: white;
+        display: grid;
+        place-items: center;
+        padding: 50px;
+      }

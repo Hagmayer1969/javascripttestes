@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="container">  
+          <h1>Para saber JavaScript</h1>
+    <p id="mostrar">Estudar é necessário</p>
+    <button
+      type="button"
+      onclick='document.getElementById("mostrar")
+    .innerHTML= "Lets Go!"'
+    >
+      ClickAqui
+    </button>
+        </div>
+
+    <div class="boximagens">
+         <h2>Quem concorda ?</h2>
+    <p>deixe sua resposta</p>
+    <button
+      onclick="document.getElementById('myImage')
+    .src='concordo.jpg'; 
+    document.getElementById('myImage').style.display='block';"
+    >
+      concordo
+    </button>
+    <img
+      id="myImage"
+      src=""
+      style="
+        display: none;
+        margin-top: 10px;
+        border-radius: 8px;
+        max-width: 300px;
+        max-height: 300px;
+      "
+    />
+    <button
+      onclick="document.getElementById('myImage')
+    .src='naoconcorda.jpg';
+    document.getElementById('myImage').style.display='block';"
+    >
+      Não concordo
+    </button>
+    </div>
+   
+  </body>
+</html>
