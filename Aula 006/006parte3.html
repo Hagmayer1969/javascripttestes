@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escola eliti</title>
+  </head>
+  <style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: rgb(51, 9, 9) ;
+        font-style: oblique;
+       place-items: center; 
+       display: grid;
+        text-align: center;
+        color: white;
+        padding:200px;
+        min-height: 100vh;
+    }
+    div {
+        background-color: black;
+        padding: 50px;
+        border-radius: 10px;
+
+    }
+  </style>
+  <body>
+    <div>
+         <script>
+      let nome = window.prompt("qual seu nome?");
+      document.write(
+        `Ola <strong>${nome}</strong> seu nome tem 
+        ${nome.replace(/[^a-zA-ZÀ-ÿ]/g, "").length} letras</br>`
+      );
+
+      window.alert(`Ola ${nome}`);
+      let salario = Number(window.prompt("quanto deseja  ganhar?"));
+      document.write(`O valor que deseja ganhar é 
+      ${salario.toLocaleString("pt-BR", {
+        style: "currency",currency: "BRL",})}</br>`);
+      document.write(
+        `seu nome em letras maiusculas é ${nome.toUpperCase()}</br>`
+      );
+      document.write(`seu nome em letras minusculas é ${nome.toLowerCase()}`);
+    </script>
+    </div>
+   
+  </body>
+</html>
